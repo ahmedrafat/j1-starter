@@ -68,19 +68,19 @@ install_if -> { RUBY_VERSION =~ /3/ } do
 end
 
 # ------------------------------------------------------------------------------
+# PRODUCTION: Gem needed for the Jekyll and J1 prod environment
+#
+
+# ------------------------------------------------------------------------------
 # Specify the THEME GEM used for the project
 
 # Loaded from RubyGems
-# gem 'j1-template', '~> 2023.0.0'
+gem 'j1-template', '~> 2023.0.0'
 
 # Loaded from gem.fury.io
-source 'https://gem.fury.io/jekyll-one-org/' do
-  gem 'j1-template', '~> 2023.0.0'
-end
-
-# ------------------------------------------------------------------------------
-# PRODUCTION: Gem needed for the Jekyll and J1 prod environment
-#
+#source 'https://gem.fury.io/jekyll-one-org/' do
+#  gem 'j1-template', '~> 2023.0.6'
+#end
 
 # ------------------------------------------------------------------------------
 # Code Highlighter Rouge
@@ -168,6 +168,10 @@ end
 # gem 'scss_lint', '~> 0.56.0', require: false
 #
 # ------------------------------------------------------------------------------
+#
+# Required for Heroku, see support ticket: https://help.heroku.com/tickets/1198846
+# gem 'sass-embedded', '~> 1.57.1'
+
 gem 'sassc', '~> 2.4'
 gem 'bump', '~> 0.10'
 
