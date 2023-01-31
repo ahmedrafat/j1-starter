@@ -6,7 +6,7 @@ the best of OpenSource software for the Web and the Web site generator
 private or professional use. Explore this site to learn what's possible if
 you go to the Jekyll Way.
 
-![Screenshot](https://github.com/jekyll-one-org/j1-template/raw/main/starter-screenshot.jpg "J1 Starter Web")
+![Screenshot](https://github.com/jekyll-one-org/j1-starter/raw/main/starter-screenshot.jpg "J1 Starter")
 
 * Fully Responsive. J1 Theme supports modern web browsers on all
   devices for best results on PCs, Tablets, and SmartPhones.
@@ -26,7 +26,7 @@ Have fun!
 The template comes with a Web included, a skeleton for your new Web site.
 This Web is called the **Starter Web**, a general-purpose Website scaffold to
 be modified for your needs. The built-in Starter Web can be visited live
-at [Netlify](https://j1-preview-netlify.netlify.app/).
+at [J1 Starter](https://starter.jekyll.one/).
 
 **Have fun exploring what a modern static web, a Jekyll site can do**!
 
