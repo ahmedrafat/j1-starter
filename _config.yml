@@ -53,7 +53,7 @@ environment:                            development
 # ------------------------------------------------------------------------------
 # Sets the build version of J1 Theme Gem
 #
-version:                                2023.0.7
+version:                                2023.0.9
 
 # version
 # ------------------------------------------------------------------------------
@@ -339,8 +339,8 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-# url:                                  http://localhost:20000
-url:                                    https://starter.jekyll.one
+url:                                  http://localhost:23000
+# url:                                    https://starter.jekyll.one
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the
@@ -366,7 +366,7 @@ base_path:                              ""
 #
 protocol:                               http
 host:                                   localhost
-port:                                   20000
+port:                                   23000
 timezone:                               Europe/Berlin
 encoding:                               UTF-8
 
@@ -491,11 +491,11 @@ kramdown:
 #
 plugins:
 # - algolia
-  - asciidoctor
 # - asciidoctor-pdf
-  - jekyll-asciidoc
 # - jekyll-gist
 # - jekyll-redirect-from
+  - asciidoctor
+  - jekyll-asciidoc
 
 # ------------------------------------------------------------------------------
 # ALGOLIA Search (Instantsearch)
@@ -588,6 +588,19 @@ webmaster_verifications:
 #
 excerpt_separator:                      excerpt__end
 excerpt_truncate_words:                 100
+
+# ------------------------------------------------------------------------------
+# COLLECTION settings
+# See: https://jekyllrb.com/docs/collections/#collections
+#
+collections:
+
+  # ----------------------------------------------------------------------------
+  # Book shelf
+  #
+  biography:
+    output:                             true
+    permalink:                          /collections/public/:collection/:name/
 
 # ------------------------------------------------------------------------------
 # FRONTMATTER defaults
@@ -746,6 +759,21 @@ defaults:
       resource_options:
         - toccer:
             collapseDepth:              3
+
+  # ----------------------------------------------------------------------------
+  # Collections
+  #
+
+  # ----------------------------------------------------------------------------
+  # Biography (Book Shelf)
+  #
+  - scope:
+      type:                             biography
+      path:                             collections/_biography
+
+    values:
+      layout:                           page
+
 
 # ==============================================================================
 # 7. LAYOUT configuration
