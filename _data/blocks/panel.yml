@@ -730,7 +730,7 @@ settings:
         properties:                     pt-5 pb-5
 
         position:                       left                                    # left | center
-        title:                          Creators Blog
+        title:                          Blog
         tagline:                        latest news
         translate_description:          notranslate                             # translate|notranslate
         description_properties:         mt-3 mr-3 mb-3

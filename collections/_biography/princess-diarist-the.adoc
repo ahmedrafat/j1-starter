@@ -32,7 +32,7 @@ regenerate:                             false
 resources:                              []
 resource_options:
   - attic:
-      padding_top:                      600
+      padding_top:                      550
       slides:
         - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
           alt:                          giammarco-boscaro-1920x1280

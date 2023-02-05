@@ -23,7 +23,7 @@ resource_options:
   - toccer:
       collapseDepth:                    3
   - attic:
-      padding_top:                      600
+      padding_top:                      550
       slides:
         - url:                          /assets/images/collections/blog/wikipedia/columbia-river.1200x400.jpg
           alt:                          Columbia River

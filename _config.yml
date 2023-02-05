@@ -226,11 +226,11 @@ doctype:                                html
 #   default:                            false
 # ------------------------------------------------------------------------------
 #
-title:                                  J1 Starter Theme
-tagline:                                Explore What Jekyll Can Do
+title:                                  Starter
+tagline:                                Build-In Theme
 description: >
-                                        Jekyll One Starter Theme. This template gives web developers
-                                        and hobbyists a clean implementation in Jekyll for starting
+                                        The Jekyll One Starter theme gives web developers and
+                                        hobbyists a clean implementation in Jekyll for starting
                                         new projects and combines the best of open source software
                                         for the Web. Jekyll One is open source and the modules packed
                                         as well. No pain for private or professional purposes.
@@ -272,7 +272,7 @@ robots:
 brand:
   image:                                icons/j1/j1-512x512.png
   image_height:                         48px
-  text:                                 Jekyll One
+  text:                                 Starter
   text_color:                           "#9E9E9E"
 
 # Set the favicon and type
@@ -449,7 +449,7 @@ sass:
 #
 webrick:
   headers:
-    X-Builder-Template:                 J1 Theme
+    X-Builder-Template:                 J1
     X-Builder-Engine:                   Jekyll
 
 # ------------------------------------------------------------------------------

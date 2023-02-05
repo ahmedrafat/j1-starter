@@ -22,7 +22,7 @@ image:
 
 sitemap:                                false
 exclude_from_search:                    true
-fab_menu_id:                            page_ctrl
+fab_menu_id:                            open_toc
 scrollbar:                              false
 comments:                               false
 toc:                                    true
@@ -33,7 +33,7 @@ regenerate:                             false
 resources:                              [ animate, clipboard, comments, rouge ]
 resource_options:
   - attic:
-      padding_top:                      600
+      padding_top:                      550
       slides:
         - url:                          /assets/images/modules/attics/1920x1280/j1-theme-mockup-1.jpg
           alt:                          J1 Themes Mockup

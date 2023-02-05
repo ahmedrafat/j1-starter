@@ -1,5 +1,5 @@
 ---
-title:                                  J1 Starter
+title:                                  Starter
 tagline:                                Report on Failures
 date:                                   2022-01-01 00:00:00
 description: >
@@ -30,7 +30,7 @@ permalink:                              /pages/public/about/reporting_issues/
 resources:                              [ animate ]
 resource_options:
   - attic:
-      padding_top:                      600
+      padding_top:                      550
       slides:
         - url:                          /assets/images/modules/attics/1920x1280/j1-theme-mockup-1.jpg
           alt:                          J1 Themes Mockup
