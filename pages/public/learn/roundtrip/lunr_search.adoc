@@ -1,6 +1,6 @@
 ---
-title:                                  Lunr Search
-tagline:                                QuickSearch For J1
+title:                                  Search
+tagline:                                Lunr For J1
 date:                                   2020-11-08 00:00:00
 description: >
                                         The QuickSearch option for the J1 Theme is based on the
@@ -34,7 +34,7 @@ resource_options:
   - toccer:
       collapseDepth:                    3
   - attic:
-      padding_top:                      550
+      padding_top:                      600
       slides:
         - url:                          /assets/images/modules/attics/lunr-1280x800.jpg
           alt:                          Lunr Search Engine

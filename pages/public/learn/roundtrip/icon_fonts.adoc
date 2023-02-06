@@ -1,5 +1,5 @@
 ---
-title:                                  Icon Fonts
+title:                                  Icons
 tagline:                                Popular Icons Sets
 date:                                   2020-11-06 00:00:00
 description: >
@@ -28,7 +28,7 @@ regenerate:                             false
 resources:                              [ animate, iconify ]
 resource_options:
   - attic:
-      padding_top:                      550
+      padding_top:                      600
       slides:
         - url:                          /assets/images/pages/roundtrip/icon-fonts-1920x1280-bw.jpg
           alt:                          Photo by Harpal Singh on Unsplash

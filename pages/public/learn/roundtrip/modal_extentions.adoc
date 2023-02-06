@@ -1,5 +1,5 @@
 ---
-title:                                  Modal Extensions
+title:                                  Modals
 tagline:                                Improve Visitor Experience
 date:                                   2020-11-08 00:00:00
 description: >
@@ -30,7 +30,7 @@ regenerate:                             false
 resources:                              [ animate ]
 resource_options:
   - attic:
-      padding_top:                      550
+      padding_top:                      600
       slides:
         - url:                          /assets/images/pages/roundtrip/bootstrap-1920x1000-bw.jpg
           alt:                          Bootstrap Framework Logo

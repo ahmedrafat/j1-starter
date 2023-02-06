@@ -1,5 +1,5 @@
 ---
-title:                                  Preview
+title:                                  Theme Preview
 tagline:                                Explore Current Styles
 date:                                   2022-12-01 00:00:00
 description: >
@@ -29,7 +29,7 @@ resource_options:
   - toccer:
       collapseDepth:                    3
   - attic:
-      padding_top:                      550
+      padding_top:                      600  
       slides:
         - url:                          /assets/images/modules/attics/themes-1920x1280-bw.jpg
           alt:                          Photo by Clem Onojeghuo on Unsplash
@@ -2985,7 +2985,8 @@ endif::[]
 
   theme_slogans.UnoLight  = 'A touch of light';
   theme_slogans.UnoDark   = 'A night mode style';
-  theme_slogans.Bootstrap = 'Bootstrap 5 base styles';
+  theme_slogans.Bootstrap = 'Bootstrap V5 default themeref="#"
+  theme_slogans.Agency    = 'A popular Bootstrap V5 theme from StartBootstrap';
 
   theme_slogans.Cerulean  = 'A calm blue sky';
   theme_slogans.Cosmo     = 'An ode to Metro';
@@ -3013,7 +3014,7 @@ endif::[]
 
   themeName               = user_state.theme_name;
   theme_slogan            = theme_slogans[themeName];
-  themeNameHeadline       = '<h1 id="theme_name" class="notoc mb-0" style="margin-left: -5px">Theme ' + themeName + '</h1>';
+  themeNameHeadline       = '<h1 id="theme_name" class="notoc mb-0" style="margin-left: -5px">Theme ' +themeName+ '</h1>';
 
   $('#theme').prepend(themeNameHeadline);
   $('#theme').append('<p class="tagline mb-2"><b>'  + theme_slogan + '</b></p>');

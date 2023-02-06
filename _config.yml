@@ -53,7 +53,7 @@ environment:                            development
 # ------------------------------------------------------------------------------
 # Sets the build version of J1 Theme Gem
 #
-version:                                2023.0.10
+version:                                2023.0.11
 
 # version
 # ------------------------------------------------------------------------------
@@ -226,11 +226,11 @@ doctype:                                html
 #   default:                            false
 # ------------------------------------------------------------------------------
 #
-title:                                  Starter
-tagline:                                Build-In Theme
+title:                                  J1 Starter Theme
+tagline:                                Explore What Jekyll Can Do
 description: >
-                                        The Jekyll One Starter theme gives web developers and
-                                        hobbyists a clean implementation in Jekyll for starting
+                                        Jekyll One Starter Theme. This template gives web developers
+                                        and hobbyists a clean implementation in Jekyll for starting
                                         new projects and combines the best of open source software
                                         for the Web. Jekyll One is open source and the modules packed
                                         as well. No pain for private or professional purposes.
@@ -272,7 +272,7 @@ robots:
 brand:
   image:                                icons/j1/j1-512x512.png
   image_height:                         48px
-  text:                                 Starter
+  text:                                 Jekyll One
   text_color:                           "#9E9E9E"
 
 # Set the favicon and type
@@ -339,8 +339,7 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-# url:                                  http://localhost:23000
-url:                                    https://starter.jekyll.one
+url:                                    "http://localhost:20000"
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the
@@ -366,7 +365,7 @@ base_path:                              ""
 #
 protocol:                               http
 host:                                   localhost
-port:                                   23000
+port:                                   20000
 timezone:                               Europe/Berlin
 encoding:                               UTF-8
 
@@ -449,7 +448,7 @@ sass:
 #
 webrick:
   headers:
-    X-Builder-Template:                 J1
+    X-Builder-Template:                 J1 Theme
     X-Builder-Engine:                   Jekyll
 
 # ------------------------------------------------------------------------------
@@ -588,19 +587,6 @@ webmaster_verifications:
 #
 excerpt_separator:                      excerpt__end
 excerpt_truncate_words:                 100
-
-# ------------------------------------------------------------------------------
-# COLLECTION settings
-# See: https://jekyllrb.com/docs/collections/#collections
-#
-collections:
-
-  # ----------------------------------------------------------------------------
-  # Book shelf
-  #
-  biography:
-    output:                             true
-    permalink:                          /collections/public/:collection/:name/
 
 # ------------------------------------------------------------------------------
 # FRONTMATTER defaults
@@ -759,21 +745,6 @@ defaults:
       resource_options:
         - toccer:
             collapseDepth:              3
-
-  # ----------------------------------------------------------------------------
-  # Collections
-  #
-
-  # ----------------------------------------------------------------------------
-  # Biography (Book Shelf)
-  #
-  - scope:
-      type:                             biography
-      path:                             collections/_biography
-
-    values:
-      layout:                           page
-
 
 # ==============================================================================
 # 7. LAYOUT configuration

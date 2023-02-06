@@ -1,6 +1,6 @@
 ---
-title:                                  Responsive Tables
-tagline:                                Tables Viewed Best On All Devices
+title:                                  Tables
+tagline:                                Viewed Best On All Devices
 date:                                   2020-11-09 00:00:00
 description: >
                                         The Jekyll Theme JekyllOne supports a new design for
@@ -31,7 +31,7 @@ regenerate:                             true
 resources:                              [ animate, clipboard, lightbox, rouge ]
 resource_options:
   - attic:
-      padding_top:                      550
+      padding_top:                      600
       slides:
         - url:                          /assets/images/pages/roundtrip/tables-1920x1280-bw.jpg
           alt:                          Photo by Markus Spiske on Unsplash
