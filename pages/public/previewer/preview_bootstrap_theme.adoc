@@ -20,8 +20,8 @@ image:
 comments:                               false
 fab_menu_id:                            page_ctrl
 scrollbar:                              false
-permalink:                              /pages/public/previewer/current_theme/
 regenerate:                             false
+permalink:                              /pages/public/previewer/current_theme/
 
 resources:                              [ animate, clipboard, rouge ]
 resource_options:
@@ -2984,7 +2984,7 @@ endif::[]
 
   theme_slogans.UnoLight  = 'A touch of light';
   theme_slogans.UnoDark   = 'A night mode style';
-  theme_slogans.Bootstrap = 'Bootstrap V5 default themeref="#"
+  theme_slogans.Bootstrap = 'Bootstrap V5 default'
   theme_slogans.Agency    = 'A popular Bootstrap V5 theme from StartBootstrap';
 
   theme_slogans.Cerulean  = 'A calm blue sky';

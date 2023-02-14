@@ -7,14 +7,12 @@ description: >
                                         of celebrities well known by most of us. Find the books issued
                                         by musicans, actors and more.
 
-
 categories:                             [ Jekyll, Collection ]
 tags:                                   [ Preview, Bookshelf ]
 
 fab_menu_id:                            open_toc
-
+regenerate:                             false
 permalink:                              /pages/public/bookshelf/biography/
-regenerate:                             true
 
 resources:                              []
 resource_options:

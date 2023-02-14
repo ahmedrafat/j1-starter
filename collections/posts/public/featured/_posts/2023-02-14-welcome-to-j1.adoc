@@ -1,7 +1,7 @@
 ---
 title:                                  Welcome
 tagline:                                Jekyll For Everyone
-#date:                                  2023-02-01 00:00:00 +0100
+#date:                                  2023-02-14 00:00:00 +0100
 
 categories:                             [ Featured ]
 tags:                                   [ J1, Jekyll ]
@@ -17,10 +17,11 @@ regenerate:                             false
 resources:                              [ animate ]
 resource_options:
   - attic:
-      padding_top:                      600
+      opacity:                          0.5
       slides:
         - url:                          /assets/images/modules/attics/katie-moum-1920x1280.jpg
           alt:                          Photo by Katie Moum on Unsplash
+          alignY:                       0.3
           badge:
             type:                       unsplash
             author:                     Katie Moum
@@ -59,6 +60,7 @@ excerpt__end
 
 // Include sub-documents (if any)
 // -----------------------------------------------------------------------------
+
 [[readmore]]
 == What is a static site?
 
