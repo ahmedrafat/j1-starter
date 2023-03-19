@@ -1,0 +1,204 @@
+# ------------------------------------------------------------------------------
+# ~/_data/modules/carousel.yml
+# User configuration for J1 Carousel (based on Owl Carousel V1)
+#
+# Product/Info:
+# https://jekyll.one
+#
+# Copyright (C) 2023 Juergen Adams
+#
+# J1 Theme is licensed under the MIT License.
+# See: https://github.com/jekyll-one-org/j1-template/blob/main/LICENSE.md
+# ------------------------------------------------------------------------------
+
+# ------------------------------------------------------------------------------
+# Description (used for J1 CC only)
+#
+description:
+
+  title:                                Slick
+  scope:                                User settings
+  location:                             _data/apps/slick.yml
+
+# ------------------------------------------------------------------------------
+# User configuration settings
+#
+settings:
+  enabled:                              true
+
+  # ----------------------------------------------------------------------------
+  # Slider settings
+  # ----------------------------------------------------------------------------
+  sliders:
+
+    # --------------------------------------------------------------------------
+    # POST slider
+    #
+    - slider:
+      enabled:                          true
+
+      id:                               post_slider
+      selector:                         post-slider                             # class used for slick to initialize on
+      type:                             post
+      group:                            Life                                    # generate slides only for group (specified in article/post)
+
+      # ------------------------------------------------------------------------
+      # Slider options
+      #
+      options:
+        autoplay:                       true
+        slidesToShow:                   3
+        slidesToScroll:                 1
+        responsive:                     true                                    # enables reponsive options to generate breakpoint properties for slick()
+
+      # ------------------------------------------------------------------------
+      # Reponsive options
+      #
+      responsive:
+        - breakpoint:
+          settings:
+            breakOn:                    1024
+            slidesToShow:               2
+            slidesToScroll:             2
+        - breakpoint:
+          settings:
+            breakOn:                    600
+            slidesToShow:               1
+            slidesToScroll:             1
+            dots:                       true
+        - breakpoint:
+          settings:
+            breakOn:                    480
+            slidesToShow:               1
+            slidesToScroll:             1
+
+
+    # --------------------------------------------------------------------------
+    # EXAMPLE slider 1
+    #
+    - slider:
+      enabled:                          true
+
+      id:                               example_slider_arrows_dots
+      selector:                         example-slider-arrows-dots
+      type:                             example
+
+      # ------------------------------------------------------------------------
+      # Slider options
+      #
+      options:
+        arrows:                         true
+        dots:                           true
+        autoplay:                       false
+        slidesToShow:                   3
+        slidesToScroll:                 1
+        responsive:                     true
+
+      # ------------------------------------------------------------------------
+      # Reponsive options
+      #
+      responsive:
+        - breakpoint:
+          settings:
+            breakOn:                    1024
+            arrows:                     true
+            dots:                       true
+            slidesToShow:               2
+            slidesToScroll:             2
+        - breakpoint:
+          settings:
+            breakOn:                    600
+            slidesToShow:               1
+            slidesToScroll:             1
+        - breakpoint:
+          settings:
+            breakOn:                    480
+            slidesToShow:               1
+            slidesToScroll:             1
+
+    # --------------------------------------------------------------------------
+    # DEFAULT slider
+    #
+    - slider:
+      enabled:                          false
+
+      id:                               default_slider
+      selector:                         default-slider
+      type:                             default
+
+      # ------------------------------------------------------------------------
+      # Lightbox options
+      #
+      lightbox:
+        enabled:                        false
+        type:                           lb
+
+      # ------------------------------------------------------------------------
+      # Slider options
+      #
+      options:
+        arrows:                         true
+        dots:                           true
+        speed:                          300
+        autoplay:                       false
+        slidesToShow:                   3
+        slidesToScroll:                 1
+        responsive:                     true
+
+      # ------------------------------------------------------------------------
+      # Reponsive options
+      #
+      responsive:
+        - breakpoint:
+          settings:
+            breakOn:                    1024
+            slidesToShow:               2
+            slidesToScroll:             2
+        - breakpoint:
+          settings:
+            breakOn:                    600
+            slidesToShow:               1
+            slidesToScroll:             1
+        - breakpoint:
+          settings:
+            breakOn:                    480
+            slidesToShow:               1
+            slidesToScroll:             1
+
+      # ------------------------------------------------------------------------
+      # Slides
+      #
+      slides:
+
+        # slide 1
+        #
+        - slide:
+          alt:                          Slide 1
+          title:                        Slide 1
+          foreground_image:             /assets/images/modules/masterslider/slider_1/cat-1.jpg
+          background_image:             /assets/themes/j1/modules/masterslider/css/blank.gif
+          thumb_image:                  false
+          slideinfo:                    false
+
+        # slide 2
+        #
+        - slide:
+          alt:                          Cat 2
+          title:                        Cat 2
+          foreground_image:             /assets/images/modules/masterslider/slider_1/cat-2.jpg
+          background_image:             /assets/themes/j1/modules/masterslider/css/blank.gif
+          thumb_image:                  false
+          slideinfo:                    false
+
+        # slide 3
+        #
+        - slide:
+          alt:                          Cat 3
+          title:                        Cat 3
+          foreground_image:             /assets/images/modules/masterslider/slider_1/cat-3.jpg
+          background_image:             /assets/themes/j1/modules/masterslider/css/blank.gif
+          thumb_image:                  false
+          slideinfo:                    false
+
+# ------------------------------------------------------------------------------
+# END config

@@ -231,18 +231,18 @@ scrollDynamicPagesTopOnChange:          false
 #
 body:
   scrollbar:                            false
-  background-color:                     gray-50                                 # currently NOT used (set with CSS)
-  font-color:                           gray_900                                # currently NOT used (set with CSS)
-  font-size:                            1em                                     # currently NOT used (set with CSS)
-  font-weight:                          400                                     # currently NOT used (set with CSS)
-  line-height:                          1.5                                     # currently NOT used (set with CSS)
+  background-color:                     md_gray_50
+  font-color:                           md_gray_900
+  font-size:                            1em
+  font-weight:                          400
+  line-height:                          1.5
 
   # ----------------------------------------------------------------------------
   # animation on page load
   # See: https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/
   #
-  animation:                            true                                    # true | false
-  animation_type:                       fadeIn                                  # fadeIn | preloader,currently, only 'fadeIn' supported
+  animation:                            true
+  animation_type:                       fadeIn                                  # currently, only fadeIn supported
   animation_duration:                   2
 
 

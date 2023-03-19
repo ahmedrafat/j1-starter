@@ -103,11 +103,6 @@
     # --------------------------------------------------------------------------
     # Modules
     #
-
-    - title:                            Where to go
-      href:                             https://jekyll.one/pages/public/manuals/where_to_go/
-      icon:                             paw
-
     - title:                            Modules
       icon:                             alpha-j-box
       dropdown:
@@ -343,6 +338,10 @@
       - title:                          Current Theme
         href:                           /pages/public/previewer/current_theme/
         icon:                           theme-light-dark
+      - title:                          Slick Slider
+        href:                           /pages/public/previewer/slick/
+        icon:                           view-carousel
+
       - title:                          MD Color Palette
         href:                           https://jekyll.one/pages/public/previewer/color_palette/
         icon:                           format-color-fill

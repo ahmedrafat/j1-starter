@@ -19,7 +19,6 @@
 # Description (used for J1 CC only)
 #
 description:
-
   title:                                Cookies
   scope:                                Default settings
   location:                             _data/modules/defaults/cookies.yml
@@ -31,7 +30,7 @@ defaults:
   enabled:                              true
 
   # ----------------------------------------------------------------------------
-  # Switches
+  # Oprions
   #
   #   checkCookies
   #   --------------------------------------------------------------------------
