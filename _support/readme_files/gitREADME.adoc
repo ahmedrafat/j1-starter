@@ -158,7 +158,7 @@ git clean -dfx
 
 == Delete a Git tag
 
-Use the “git tag” command with the “-d” option
+Use the “git tag” command with the `-d` option
 
 == From local
 

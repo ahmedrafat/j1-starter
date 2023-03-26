@@ -75,12 +75,12 @@ end
 # Specify the THEME GEM used for the project
 
 # Loaded from RubyGems
-# gem 'j1-template', '~> 2023.1.0'
+gem 'j1-template', '~> 2023.1.0'
 
 # Loaded from gem.fury.io
-source 'https://gem.fury.io/jekyll-one-org/' do
- gem 'j1-template', '~> 2023.1.0'
-end
+#source 'https://gem.fury.io/jekyll-one-org/' do
+#  gem 'j1-template', '~> 2023.1.0'
+#end
 
 # ------------------------------------------------------------------------------
 # Code Highlighter Rouge
@@ -150,6 +150,7 @@ group :jekyll_plugins do
   # Additional Jekyll Plugins  (optional)
   #
   # gem 'jekyll-admin', '~> 0.11'
+  # gem 'jekyll-archives', '~> 2.2'
   # gem 'jekyll-gist', '>= 1.5.0'
   # gem 'jekyll-redirect-from', '>= 0.16.0'
 end
@@ -219,7 +220,6 @@ gem 'bump', '~> 0.10'
 #
 # ------------------------------------------------------------------------------
 #
-# gem 'passenger', '>= 5.3'
 gem 'puma', '>= 6.0'
 
 # ------------------------------------------------------------------------------
