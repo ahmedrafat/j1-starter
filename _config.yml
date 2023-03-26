@@ -47,7 +47,7 @@
 #   values:                             development|production
 #   default:                            development
 #
-environment:                            development
+environment:                            production
 
 # version
 # ------------------------------------------------------------------------------
@@ -60,6 +60,7 @@ version:                                2023.1.0
 # Sets the copyright info of the site
 #
 copyright:                              © 2023 J1 · All rights reserved
+
 
 # noscript
 # ------------------------------------------------------------------------------
@@ -277,6 +278,7 @@ robots:
 # ------------------------------------------------------------------------------
 # BRAND configuration
 # Set the brand image and favicon (located in /asset/images)
+
 brand:
   image:                                icons/j1/j1-512x512.png
   image_height:                         48px
@@ -286,7 +288,7 @@ brand:
 # Set the favicon and type
 #
 favicon:
-  image:                                icons/j1/favicon.ico
+  image:                                icons/j1/j1-32x32.ico
   type:                                 image/ico
 
 
@@ -347,7 +349,8 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-url:                                    http://localhost:30000
+# url:                                  http://localhost:23000
+url:                                    https://starter.jekyll.one/
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the
@@ -373,7 +376,7 @@ base_path:                              ""
 #
 protocol:                               http
 host:                                   localhost
-port:                                   30000
+port:                                   23000
 timezone:                               Europe/Berlin
 encoding:                               UTF-8
 
@@ -411,7 +414,7 @@ exclude:                                [
                                           Gemfile, Gemfile.lock, Guardfile,
                                           yarn.lock, config.ru,
                                           package-lock.json, package.json,
-                                          '*.ignore', '*._config.yml',
+                                          '*.ignore',
                                           '*.bat', '*.sh', '*.tmp', 'dot.*',
                                           '*.txt', '*.log', '*.ppt*', '*.pdf',
                                           '*.zip', '*.7z', '*.tgz', '*.tar',
@@ -545,7 +548,7 @@ whitelist:
 
 
 # ==============================================================================
-# 5. SEO and Social Media settings (global)
+# 5. SEO ans Social Media settings (gloal)
 #
 # ------------------------------------------------------------------------------
 #
@@ -675,7 +678,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      open_toc
+      fab_menu_id:                      page_ctrl
       scrollbar:                        false
       personalization:                  false
       exclude_from_search:              false
@@ -718,7 +721,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      open_toc
+      fab_menu_id:                      open_toc_reload
       scrollbar:                        false
       page_navigation:                  true
       personalization:                  false
@@ -756,7 +759,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      open_toc
+      fab_menu_id:                      open_toc_reload
       scrollbar:                        false
       page_navigation:                  true
       personalization:                  false
@@ -908,8 +911,6 @@ defaults:
 #   default:                            empty array
 #
 # ------------------------------------------------------------------------------
-
-# Copmress (HTML) settings
 #
 compress_html:
   enabled:                              true
