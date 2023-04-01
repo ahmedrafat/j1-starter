@@ -30,20 +30,21 @@ include Asciidoctor
 # ------------------------------------------------------------------------------
 Asciidoctor::Extensions.register do
 
-  class SlickBlockMacro < Extensions::BlockMacroProcessor
+  class MasonryBlockMacro < Extensions::BlockMacroProcessor
     use_dsl
 
-    named :slick
+    named :masonry
     name_positional_attributes 'role'
 
     def process parent, target, attrs
-
-      title_html  = (attrs.has_key? 'title') ? %(<div class="slider-title">#{attrs['title']}</div>\n) : nil
-      html = %(#{title_html} <div id="#{target}_parent" class="slider-parent #{attrs['role']}"></div>)
+      title_html  = (attrs.has_key? 'title') ? %(<div class="masonry-title">#{attrs['title']}</div>\n) : nil
+#     html = %(#{title_html} <div id="#{target}_parent" class="container g-0 masonry-parent #{attrs['role']}"></div>)
+      html = %(#{title_html} <div id="#{target}_parent" class="masonry-parent #{attrs['role']}"></div>)
       create_pass_block parent, html, attrs, subs: nil
     end
+
   end
 
-  block_macro SlickBlockMacro
+  block_macro MasonryBlockMacro
 
 end
