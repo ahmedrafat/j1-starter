@@ -1,6 +1,6 @@
 # ------------------------------------------------------------------------------
 # ~/_config.yml
-# Global Jekyll site configuration (runtime)
+# Global Jekyll site configuration (runtime, development)
 #
 # Product/Info:
 # https://jekyll.one
@@ -60,7 +60,6 @@ version:                                2023.1.0
 # Sets the copyright info of the site
 #
 copyright:                              © 2023 J1 · All rights reserved
-
 
 # noscript
 # ------------------------------------------------------------------------------
@@ -236,25 +235,8 @@ description: >
                                         for the Web. Jekyll One is open source and the modules packed
                                         as well. No pain for private or professional purposes.
 keywords: >
-                                        opensource, free, load, download, start, starter, example,
-                                        high, easy, use, secure, encrypt, standard, popular,
-                                        generate, create, learn, distribute, publish, deploy,
-                                        beginner, advanced, expert, student, learner, writer, reader, visitor
-                                        framework, toolkit, integration, extension, module, api,
-                                        dynamic, static, generator, client, server, internet, local, localhost
-                                        page, web, website, webdesign, material, design, responsive,
-                                        javascript, nodejs, ruby, windows, linux, osx, mac, os,
-                                        http, https, html, html5, css, scss, style,
-                                        browser, firefox, chrome, edge, opera, safari,
-                                        configuration, generator, navigation, menu, dropdown, fab, action, button
-                                        application, interface, provider, api, repository,
-                                        cookie, language, translation, gdpr, dsgvo, privacy,
-                                        asciidoc, aciidoctor, bootstrap, jekyll, liquid,
-                                        hyvor, disqus, git, github, netlify, heroku, apple, microsoft,
-                                        provider, service, internet, support,
-                                        google, analytics, advertising, search, console, silverlight, score,
-                                        j1, template, jekyllone, comment
-
+                                        opensource, free, j1, template, jekyll, jekyllone, web, sites,
+                                        static, jamstack
 author:
   name:                                 Juergen Adams
   email:                                juergen@jekyll.one
@@ -278,7 +260,6 @@ robots:
 # ------------------------------------------------------------------------------
 # BRAND configuration
 # Set the brand image and favicon (located in /asset/images)
-
 brand:
   image:                                icons/j1/j1-512x512.png
   image_height:                         48px
@@ -288,7 +269,7 @@ brand:
 # Set the favicon and type
 #
 favicon:
-  image:                                icons/j1/j1-32x32.ico
+  image:                                icons/j1/favicon.ico
   type:                                 image/ico
 
 
@@ -349,8 +330,8 @@ permalink:                              pretty
 # site.url will be set to the value of host, port.
 # NOTE: Required setting for the sitemap plugin, for example.
 #
-# url:                                  http://localhost:23000
-url:                                    https://starter.jekyll.one/
+url:                                    http://localhost:23000
+# url:                                  https://starter.jekyll.one/
 
 # The subpath of your site, e.g. /blog/. Used in conjunction with
 # site.url (see above) when you want a link to something with the
@@ -414,7 +395,7 @@ exclude:                                [
                                           Gemfile, Gemfile.lock, Guardfile,
                                           yarn.lock, config.ru,
                                           package-lock.json, package.json,
-                                          '*.ignore',
+                                          '*.ignore', '*._config.yml',
                                           '*.bat', '*.sh', '*.tmp', 'dot.*',
                                           '*.txt', '*.log', '*.ppt*', '*.pdf',
                                           '*.zip', '*.7z', '*.tgz', '*.tar',
@@ -500,6 +481,7 @@ kramdown:
 plugins:
 # - algolia
 # - asciidoctor-pdf
+# - jekyll-archives
 # - jekyll-gist
 # - jekyll-redirect-from
   - asciidoctor
@@ -548,7 +530,7 @@ whitelist:
 
 
 # ==============================================================================
-# 5. SEO ans Social Media settings (gloal)
+# 5. SEO and Social Media settings (global)
 #
 # ------------------------------------------------------------------------------
 #
@@ -607,6 +589,14 @@ collections:
   # Book shelf
   #
   biography:
+    output:                             true
+    permalink:                          /collections/public/:collection/:name/
+
+  fantasy:
+    output:                             true
+    permalink:                          /collections/public/:collection/:name/
+
+  romance:
     output:                             true
     permalink:                          /collections/public/:collection/:name/
 
@@ -678,7 +668,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      page_ctrl
+      fab_menu_id:                      open_toc
       scrollbar:                        false
       personalization:                  false
       exclude_from_search:              false
@@ -721,7 +711,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      open_toc_reload
+      fab_menu_id:                      open_toc
       scrollbar:                        false
       page_navigation:                  true
       personalization:                  false
@@ -759,7 +749,7 @@ defaults:
         follow:                         true
 
       toc:                              true
-      fab_menu_id:                      open_toc_reload
+      fab_menu_id:                      open_toc
       scrollbar:                        false
       page_navigation:                  true
       personalization:                  false
@@ -774,11 +764,25 @@ defaults:
   #
 
   # ----------------------------------------------------------------------------
-  # Biography (Book Shelf)
+  # Book Shelf
   #
   - scope:
       type:                             biography
       path:                             collections/_biography
+
+    values:
+      layout:                           page
+
+  - scope:
+      type:                             fantasy
+      path:                             collections/_fantasy
+
+    values:
+      layout:                           page
+
+  - scope:
+      type:                             romance
+      path:                             collections/_romance
 
     values:
       layout:                           page
@@ -911,6 +915,8 @@ defaults:
 #   default:                            empty array
 #
 # ------------------------------------------------------------------------------
+
+# Copmress (HTML) settings
 #
 compress_html:
   enabled:                              true

@@ -339,7 +339,7 @@ of the page. The technique, introduced by Lightbox2, gained widespread
 popularity thanks to its simple style. The term lightbox has been employed
 since then for Javascript libraries to support such functionality.
 
-.Image Slider + Arrows + Dots + Lightbox (responsive)
+.Slider + Arrows + Dots + Lightbox (responsive)
 slick::image_slider_lightbox[role="mb-5"]
 
 The Lighbox used for Slick sliders is _Slick-Lighbox_, an addon package

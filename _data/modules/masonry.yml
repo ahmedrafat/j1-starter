@@ -27,12 +27,7 @@ settings:
   enabled:                              true
 
   # ----------------------------------------------------------------------------
-  # Masonry options
-  # ----------------------------------------------------------------------------
-  transitionDuration:                   0.5
-
-  # ----------------------------------------------------------------------------
-  # Masonry settings
+  # Grid and Masonry API option settings
   # ----------------------------------------------------------------------------
   grids:
 
@@ -41,12 +36,11 @@ settings:
     #
     - grid:
       enabled:                          true
-      hideDisabled:                     true
 
-      id:                               post_series_grid
+      id:                               post_series_example
       type:                             post
-      group:                            Life                                    # generate grid elements only for group
-      category:                         Life                                    # generate grid elements only for group
+      group:                            Life                                    # generate grid elements only for the group
+      bs_gutter:                        1                                       # [0 .. 5]
 
       # ------------------------------------------------------------------------
       # Lightbox options
@@ -68,19 +62,18 @@ settings:
     #
     - grid:
       enabled:                          true
-      hideDisabled:                     true
 
       id:                               bs_image_cards_example
       type:                             bs_image_cards
       image_base_path:                  /assets/images/modules/gallery/mega_cities
       image_styles:                     img-fluid img-object--cover g-height-300
+      bs_gutter:                        1                                       # [0 .. 5]
 
       # ------------------------------------------------------------------------
       # Lightbox options
       #
       lightbox:
         enabled:                        true
-        type:                           lb
 
       # ------------------------------------------------------------------------
       # Masonry options
@@ -97,47 +90,46 @@ settings:
       images:
 
         - image:                        # image 1
-          title:                        Jin Mao Tower Shanghai
+          title:                        Man posing at the rooftop of Jin Mao Tower Shanghai - China
           file:                         denys-nevozhai-1_b.jpg
 
         - image:                        # image 2
-          title:                        Sunset over Taipei City
+          title:                        Sunset over Taipei City - Taiwan
           file:                         thomas-tucker_b.jpg
 
         - image:                        # image 3
-          title:                        Chicago
+          title:                        Chicago - United States
           file:                         emmad-mazhari_b.jpg
 
         - image:                        # image 4
-          title:                        The Queen Bee at the Eureka Tower
+          title:                        The Queen Bee at the Eureka Tower - Melbourne Southbank Australia
           file:                         johan-mouchet_b.jpg
 
         - image:                        # image 5
-          title:                        Shanghai
+          title:                        Shanghai - China
           file:                         federico-rizzarelli_b.jpg
 
         - image:                        # image 6
-          title:                        Shangri-La Hotel Jakarta
+          title:                        Shangri-La Hotel Jakarta - Indonesia
           file:                         gints-gailis_b.jpg
 
     # --------------------------------------------------------------------------
-    # Image Grid
+    # Base Image Grid
     #
     - grid:
       enabled:                          true
-      hideDisabled:                     true
 
-      id:                               image_grid_example
+      id:                               image_grid_base_example
       type:                             image_grid
       image_base_path:                  /assets/images/modules/gallery/mega_cities
       image_styles:                     img-fluid
+      bs_gutter:                        0                                       # [0 .. 5]
 
       # ------------------------------------------------------------------------
       # Lightbox options
       #
       lightbox:
         enabled:                        false
-        type:                           lb
 
       # ------------------------------------------------------------------------
       # Masonry options
@@ -154,27 +146,27 @@ settings:
       images:
 
         - image:                        # image 1
-          title:                        Jin Mao Tower Shanghai
+          title:                        Man posing at the rooftop of Jin Mao Tower Shanghai - China
           file:                         denys-nevozhai-1_b.jpg
 
         - image:                        # image 2
-          title:                        Sunset over Taipei City
+          title:                        Sunset over Taipei City - Taiwan
           file:                         thomas-tucker_b.jpg
 
         - image:                        # image 3
-          title:                        Chicago
+          title:                        Chicago - United States
           file:                         emmad-mazhari_b.jpg
 
         - image:                        # image 4
-          title:                        The Queen Bee at the Eureka Tower
+          title:                        The Queen Bee at the Eureka Tower - Melbourne Southbank Australia
           file:                         johan-mouchet_b.jpg
 
         - image:                        # image 5
-          title:                        Shanghai
+          title:                        Shanghai - China
           file:                         federico-rizzarelli_b.jpg
 
         - image:                        # image 6
-          title:                        Shangri-La Hotel Jakarta
+          title:                        Shangri-La Hotel Jakarta - Indonesia
           file:                         gints-gailis_b.jpg
 
     # --------------------------------------------------------------------------
@@ -182,19 +174,18 @@ settings:
     #
     - grid:
       enabled:                          true
-      hideDisabled:                     true
 
       id:                               image_grid_lightbox_example
       type:                             image_grid
       image_base_path:                  /assets/images/modules/gallery/mega_cities
       image_styles:                     img-fluid
+      bs_gutter:                        1                                       # [0 .. 5]
 
       # ------------------------------------------------------------------------
       # Lightbox options
       #
       lightbox:
         enabled:                        true
-        type:                           lb
 
       # ------------------------------------------------------------------------
       # Masonry options
@@ -211,27 +202,27 @@ settings:
       images:
 
         - image:                        # image 1
-          title:                        Jin Mao Tower Shanghai
+          title:                        Man posing at the rooftop of Jin Mao Tower Shanghai - China
           file:                         denys-nevozhai-1_b.jpg
 
         - image:                        # image 2
-          title:                        Sunset over Taipei City
+          title:                        Sunset over Taipei City - Taiwan
           file:                         thomas-tucker_b.jpg
 
         - image:                        # image 3
-          title:                        Chicago
+          title:                        Chicago - United States
           file:                         emmad-mazhari_b.jpg
 
         - image:                        # image 4
-          title:                        The Queen Bee at the Eureka Tower
+          title:                        The Queen Bee at the Eureka Tower - Melbourne Southbank Australia
           file:                         johan-mouchet_b.jpg
 
         - image:                        # image 5
-          title:                        Shanghai
+          title:                        Shanghai - China
           file:                         federico-rizzarelli_b.jpg
 
         - image:                        # image 6
-          title:                        Shangri-La Hotel Jakarta
+          title:                        Shangri-La Hotel Jakarta - Indonesia
           file:                         gints-gailis_b.jpg
 
 # ------------------------------------------------------------------------------
