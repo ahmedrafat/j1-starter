@@ -18,8 +18,9 @@ regenerate:                             false
 permalink:                              /pages/public/previewer/masonry/
 
 resources:                              [
-                                          clipboard, justifiedGallery, lightbox,
-                                          lightGallery, masonry, rouge, slick
+                                          animate, clipboard, justifiedGallery,
+                                          lightbox, lightGallery, masonry,
+                                          rouge, slick
                                         ]
 resource_options:
   - attic:
@@ -82,7 +83,7 @@ content to show *specific* elements the website visitors should find on a
 most top position of your homepage as an eye-catcher.
 
 .Post Silder
-slick::post_slider[role="mb-4"]
+slick::post_carousel_life[role="mb-4"]
 
 
 == Masonry Grid on Collections
@@ -112,7 +113,7 @@ inspire and inform readers about their accomplishments and contributions
 to society.
 
 .Masonry Collection Grid
-masonry::collection_biography[role="mb-4"]
+masonry::collection_biography[role="mb-3"]
 
 .Configuration settings (YAML)
 [source, yaml, role="noclip mb-4"]
