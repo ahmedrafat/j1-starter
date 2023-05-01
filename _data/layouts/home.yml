@@ -303,6 +303,15 @@ lanes:
       type:                             sync
       base:                             _includes/custom
       path:                             templates
+      file:                             people_panel.html
+
+  - lane:
+      enabled:                          false
+      id:                               custom_content
+      region:                           body-main
+      type:                             sync
+      base:                             _includes/custom
+      path:                             templates
       file:                             collection_panel.html
 
   # ----------------------------------------------------------------------------
