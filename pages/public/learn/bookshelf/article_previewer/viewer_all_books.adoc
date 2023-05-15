@@ -24,7 +24,6 @@ permalink:                              /pages/public/bookshelf/bookshelf/
 resources:                              [ animate, masonry ]
 resource_options:
   - attic:
-      padding_top:                      600
       slides:
         - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
           alt:                          Photo by Giammarco on Unsplash
@@ -67,6 +66,10 @@ the *Bookshelf* contains:
 * Biography
 * Fantasy
 * Romance
+
+NOTE: *Resize* the browser window to see the `masonry` module, applied on
+this page, in action. All elements gets automatically *re-ordered* to fit
+the grid positions calculated by the module.
 
 // Include sub-documents (if any)
 // -----------------------------------------------------------------------------

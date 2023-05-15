@@ -26,7 +26,6 @@ permalink:                              /pages/public/bookshelf/fantasy/
 resources:                              [ animate, masonry ]
 resource_options:
   - attic:
-      padding_top:                      600
       slides:
         - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
           alt:                          Photo by Giammarco on Unsplash
@@ -63,6 +62,10 @@ restricted to a few Tolkien fanatics and literature freaks, Fantasy has
 now gone mainstream in a big way, from the mega-popular Harry Potter series
 capturing the world's attention for a decade; brought Fantasy to readers of
 all ages.
+
+NOTE: *Resize* the browser window to see the `masonry` module, applied on
+this page, in action. All elements gets automatically *re-ordered* to fit
+the grid positions calculated by the module.
 
 // Include sub-documents (if any)
 // -----------------------------------------------------------------------------

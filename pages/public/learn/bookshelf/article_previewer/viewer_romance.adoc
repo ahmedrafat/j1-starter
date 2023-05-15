@@ -27,7 +27,6 @@ permalink:                              /pages/public/bookshelf/romance/
 resources:                              [ animate, masonry ]
 resource_options:
   - attic:
-      padding_top:                      600
       slides:
         - url:                          /assets/images/modules/attics/giammarco-boscaro-1920x1280.jpg
           alt:                          Photo by Giammarco on Unsplash
@@ -64,6 +63,10 @@ bestsellers. The aim of the genre is simple, showcasing a love story where
 two people overcome adversity to obtain their happily ever after. According to
 the Romance Writers of America, women count for 82% percent of the genre’s
 readership.
+
+NOTE: *Resize* the browser window to see the `masonry` module, applied on
+this page, in action. All elements gets automatically *re-ordered* to fit
+the grid positions calculated by the module.
 
 // Include sub-documents (if any)
 // -----------------------------------------------------------------------------
