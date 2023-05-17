@@ -34,9 +34,6 @@ settings:
   nav_bar:
     enabled:                            true
 
-    nav_item_color:                     '#ffffff'
-    nav_item_color_hover:               '#616161'
-
   # ----------------------------------------------------------------------------
   # NavMenu (Desktop)
   #

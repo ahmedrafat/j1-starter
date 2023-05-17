@@ -84,6 +84,12 @@ defaults:
   background_color_1:                   "#0D47A1"                               # md-blue-900
   background_color_2:                   "#0D47A1"                               # md-blue-900
 
+  # placeholder slide, used if NO slides given in FRONTMATTER (of a page|post)
+  #
+  slides:
+    - url:                              /assets/images/modules/attics/placeholder/transparent-1920x1280.png
+      alt:                              Placeholder background image
+
   # CSS filter setting applied on (backstretch|background) image
   #
   filters:
