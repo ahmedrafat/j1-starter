@@ -10,7 +10,7 @@ gem update --system
 Add this line to your application's Gemfile:
 
 ``` ruby
-gem 'j1_template', '~> 2023.2.5'
+gem 'j1_template', '~> 2023.2.6'
 ```
 
 and install the locally created RubGem as:
@@ -33,13 +33,13 @@ to your PATH environment variable.
 
 ### Install a Gem in specific version
 
-  gem install j1-template -v 2023.2.5 --user-install --no-document
+  gem install j1-template -v 2023.2.6 --user-install --no-document
 
 You can also use version comparators like >= or ~>
 
-  gem install j1-template -v "~> 2023.2.5" --user-install --no-document
+  gem install j1-template -v "~> 2023.2.6" --user-install --no-document
 
 
 ### Install a Gem from different source
 
-  gem install j1-template -v 2023.2.5 --source 'https://gem.fury.io/jekyll-one-org/' --user-install --no-document
+  gem install j1-template -v 2023.2.6 --source 'https://gem.fury.io/jekyll-one-org/' --user-install --no-document
