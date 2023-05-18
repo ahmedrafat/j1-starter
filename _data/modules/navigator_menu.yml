@@ -130,6 +130,13 @@
     # --------------------------------------------------------------------------
     # Modules
     #
+
+    - title:                            Where to go
+      href:                             https://jekyll.one/pages/public/manuals/where_to_go/
+      icon:                             paw
+      target:                           _blank
+
+
     - title:                            Modules
       icon:                             alpha-j-box
       dropdown:
@@ -144,7 +151,6 @@
           target:                       _blank
         - title:                        Cookie Consent
           href:                         https://jekyll.one/pages/public/manuals/modules/cookie_consent/
-#         href:                         '#'
           icon:                         cookie
           target:                       _blank
         - title:                        Galleries
@@ -158,7 +164,6 @@
         - title:                        Logger
           href:                         https://jekyll.one/pages/public/manuals/modules/logger/
           icon:                         math-log
-          target:                       _blank
         - title:                        Master Slider
           href:                         https://jekyll.one/pages/public/manuals/modules/masterslider/
           icon:                         gesture-swipe
@@ -170,11 +175,11 @@
         - title:                        MSDropdown
           href:                         https://jekyll.one/pages/public/manuals/msdropdown/
           icon:                         form-dropdown
+          target:                       _blank
         - title:                        Navigator
           href:                         https://jekyll.one/pages/public/manuals/modules/navigator/
-#         href:                         '#'
-          icon:                         near-me
           target:                       _blank
+          icon:                         near-me
         - title:                        Range Slider
           href:                         https://jekyll.one/pages/public/manuals/modules/rangeslider/
           icon:                         distribute-vertical-center
@@ -185,12 +190,10 @@
           target:                       _blank
         - title:                        Themer
           href:                         https://jekyll.one/pages/public/manuals/modules/themer/
-#         href:                         '#'
           icon:                         theme-light-dark
           target:                       _blank
         - title:                        Toccer
           href:                         https://jekyll.one/pages/public/manuals/modules/toccer/
-#         href:                         '#'
           icon:                         wrap
           target:                       _blank
 
@@ -205,10 +208,7 @@
 #         href:                         https://jekyll.one/pages/public/manuals/j1/resources/
           href:                         '#'
           icon:                         garage
-          target:                       _blank
         - title:                        Layouts
-#         href:                         https://jekyll.one/pages/public/manuals/j1/layouts/
-#         href:                         '#'
           href:                         https://jekyllrb.com/docs/layouts/
           icon:                         page-layout-body
           target:                       _blank
@@ -242,6 +242,7 @@
 #           - title:                    Collections
 #             href:                     https://jekyll.one/pages/public/manuals/j1/content/collections/
 #             icon:                     file-percent
+#             target:                   _blank
 
     # --------------------------------------------------------------------------
     # J1 Integrations
@@ -325,12 +326,16 @@
       icon:                             toolbox
       dropdown:
 
+        - title:                        HTML Validation
+          href:                         https://jekyll.one/pages/public/toolbox/html_validation/
+          icon:                         language-html5
+          target:                       _blank
         - title:                        Pandoc
-          href:                         https://jekyll.one/pages/public/manuals/pandoc/
+          href:                         https://jekyll.one/pages/public/toolbox/pandoc/
           icon:                         cog-transfer
           target:                       _blank
-        - title:                        Platform Info
-          href:                         https://jekyll.one/pages/public/manuals/platform/
+        - title:                        Platform
+          href:                         https://jekyll.one/pages/public/toolbox/platform/
           icon:                         folder-information
           target:                       _blank
 
@@ -364,19 +369,19 @@
           dropdown:
 
             - title:                    Liquid
-              href:                     https://jekyll.one/pages/public/manuals/liquid/user_guide/
+              href:                     https://jekyll.one/pages/public/toolbox/liquid/
               icon:                     mustache
               target:                   _blank
             - title:                    Commandline
-              href:                     https://jekyll.one/pages/public/manuals/jekyll/user_guide/commandline/
+              href:                     https://jekyll.one/pages/public/toolbox/jekyll/commandline/
               icon:                     console-line
               target:                   _blank
             - title:                    Configuration
-              href:                     https://jekyll.one/pages/public/manuals/jekyll/user_guide/configuration/
+              href:                     https://jekyll.one/pages/public/toolbox/jekyll/configuration/
               icon:                     code-braces
               target:                   _blank
             - title:                    Time and Date formats
-              href:                     https://jekyll.one/pages/public/manuals/jekyll/user_guide/date_formats/
+              href:                     https://jekyll.one/pages/public/toolbox/jekyll/date_time_formats/
               icon:                     calendar-blank
               target:                   _blank
 
@@ -390,12 +395,11 @@
       - title:                          Current Theme
         href:                           /pages/public/previewer/current_theme/
         icon:                           theme-light-dark
-
-      - title:                          Placeholder Images
-        href:                           https://jekyll.one/pages/public/previewer/placeholder_images/
+      - title:                          Image Placeholders
+        href:                           /pages/public/previewer/image_placeholder/
         icon:                           image
-        target:                         _blank
-      - title:                          Slick Slider
+
+      - title:                          Slick
         href:                           https://jekyll.one/pages/public/previewer/slick/
         icon:                           view-carousel
         target:                         _blank
@@ -403,10 +407,9 @@
         href:                           https://jekyll.one/pages/public/previewer/masonry/
         icon:                           view-dashboard-variant
         target:                         _blank
-
       - title:                          MD Color Palette
         href:                           https://jekyll.one/pages/public/previewer/color_palette/
-        icon:                           format-color-
+        icon:                           format-color-fill
         target:                         _blank
       - title:                          Master Slider
         href:                           https://jekyll.one/pages/public/previewer/masterslider/
@@ -543,28 +546,31 @@
     - title:                            Tools
       icon:                             wrench
       column:
+
         - title:                        FreeFormatter
           href:                         http://www.freeformatter.com/
-          target:                       _blank
-          icon:                         cached
-        - title:                        BeautifyTools
-          href:                         https://beautifytools.com/
           target:                       _blank
           icon:                         cached
         - title:                        AppDevTools
           href:                         https://www.appdevtools.com/
           target:                       _blank
           icon:                         cached
+
+        - title:                        W3C Validator
+          href:                         https://validator.w3.org/
+          target:                       _blank
+          icon:                         language-html5
         - title:                        Nu Html Checker
           href:                         https://validator.w3.org/nu/
           target:                       _blank
           icon:                         language-html5
+
         - title:                        Closing Tag Checker
           href:                         https://www.aliciaramirez.com/closing-tags-checker/
           target:                       _blank
           icon:                         language-html5
         - title:                        Convert CSS to Sass
-          href:                         http://sebastianpontow.de/css2compass/
+          href:                         https://www.cssportal.com/css-to-scss/
           target:                       _blank
           icon:                         language-css3
         - title:                        CSS Matic Tools
@@ -580,7 +586,7 @@
           target:                       _blank
           icon:                         code-braces
         - title:                        Character Codes
-          href:                         http://character-code.com/
+          href:                         https://html.spec.whatwg.org/multipage/named-characters.html
           target:                       _blank
           icon:                         alpha-a-box-outline
         - title:                        RegEx 101
@@ -591,7 +597,6 @@
           href:                         http://www.regexlib.com/
           target:                       _blank
           icon:                         regex
-
 
 # ------------------------------------------------------------------------------
 # Menu Themes
